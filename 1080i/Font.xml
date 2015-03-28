@@ -340,6 +340,11 @@
 			<style>bold</style>
 			<size>40</size>
 		</font>
-		
+		<font>
+			<name>Reg45Bold</name>
+			<filename>Regular.ttf</filename>
+			<style>bold</style>
+			<size>45</size>
+		</font>
 	</fontset>
 </fonts>
