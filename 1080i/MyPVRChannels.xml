@@ -70,7 +70,7 @@
 				<width>820</width>
 				<height>480</height>
 				<onleft>9000</onleft>
-				<onright>-</onright>				
+				<onright>70</onright>				
 				<onup>50</onup>
 				<ondown>50</ondown>
 				<pagecontrol>70</pagecontrol>
@@ -216,10 +216,10 @@
 				<visible>Control.IsVisible(50)</visible> 
 				<include>animation_view_change_pvr</include>
 				<include>animation_fade</include>		
-				<posx>700</posx>
+				<posx>580</posx>
 				<posy>795</posy>						
 				<width>1150</width> 		
-				<font>Reg40Bold</font>			
+				<font>Reg45Bold</font>			
 				<textcolor>aawhite</textcolor>	
 				<label>$INFO[ListItem.Label]</label>
 			</control>
@@ -227,57 +227,46 @@
 				<visible>Control.IsVisible(50)</visible> 
 				<include>animation_view_change_pvr</include>
 				<include>animation_fade</include>	
-				<posx>700</posx>
+				<posx>580</posx>
 				<posy>865</posy>
 				<control type="group">	<!-- Ground 1 -->									
 					<posy>0</posy>
 					<control type="label">
 						<posx>0</posx>
 						<posy>0</posy>
-						<width>180</width>			
+						<width>580</width>			
 						<textcolor>mainblue</textcolor>			
-						<label>$LOCALIZE[19030] :</label>			
-					</control>
-					<control type="fadelabel">					
-						<posx>170</posx>
-						<posy>0</posy>
-						<width>300</width>	
-						<textcolor>aawhite</textcolor>
-						<label>$INFO[Container(50).ListItem.Title]</label>	     		
-					</control>					
+						<label>$LOCALIZE[19030]: [COLOR aawhite]$INFO[Container(50).ListItem.Title][/COLOR]</label>			
+					</control>				
 				</control>
-				<control type="group">	<!-- Ground 2 -->									
+				<control type="group">	<!-- Ground 1 -->									
 					<posy>40</posy>
 					<control type="label">
 						<posx>0</posx>
 						<posy>0</posy>
-						<width>180</width>			
+						<width>580</width>			
 						<textcolor>mainblue</textcolor>			
-						<label>$LOCALIZE[19126] :</label>			
-					</control>
-					<control type="label">						
-						<posx>170</posx>
-						<posy>0</posy>
-						<width>300</width>	
-						<textcolor>aawhite</textcolor>
-						<label>$INFO[Container(50).ListItem.StartTime]</label>	     		
-					</control>					
+						<label>$LOCALIZE[19031]: [COLOR aawhite]$INFO[Container(50).ListItem.NextTitle][/COLOR]</label>			
+					</control>				
 				</control>
-				<control type="group">	<!-- Ground 3 -->									
+				<control type="group">	<!-- Ground 2 -->									
 					<posy>80</posy>
 					<control type="label">
 						<posx>0</posx>
 						<posy>0</posy>
-						<width>180</width>							
+						<width>280</width>			
 						<textcolor>mainblue</textcolor>			
-						<label>$LOCALIZE[19127] :</label>			
-					</control>
-					<control type="label">						
-						<posx>170</posx>
+						<label>$LOCALIZE[19126]: [COLOR aawhite]$INFO[Container(50).ListItem.StartTime][/COLOR]</label>			
+					</control>					
+				</control>
+				<control type="group">	<!-- Ground 3 -->									
+					<posy>120</posy>
+					<control type="label">
+						<posx>0</posx>
 						<posy>0</posy>
-						<width>300</width>	
-						<textcolor>aawhite</textcolor>
-						<label>$INFO[Container(50).ListItem.EndTime]</label>	     		
+						<width>280</width>							
+						<textcolor>mainblue</textcolor>			
+						<label>$LOCALIZE[19127]: [COLOR aawhite]$INFO[Container(50).ListItem.EndTime][/COLOR]</label>			
 					</control>					
 				</control>
 			</control>
@@ -288,7 +277,7 @@
 				<posx>1200</posx>
 				<posy>875</posy>	
 				<width>650</width>
-				<height>150</height>
+				<height>148</height>
 				<font>Light30</font>				
 				<textcolor>aawhite</textcolor>	
 				<shadowcolor></shadowcolor> 				
@@ -297,5 +286,26 @@
 			</control> 
 			<include>PVRMediaMenu</include>
 			<include>SubMenuTabLeft</include>
+			<control type="group">
+			<visible>Control.IsVisible(50)</visible>				
+			<include>animation_hoverslide</include>	
+			<visible>IntegerGreaterThan(Container(50).NumItems,30)</visible>				
+			<visible>Skin.HasSetting(Scrollbar)</visible>
+
+			<control type="scrollbar" id="70">	<!--Scrollbar ID60-->	
+				<posx>1840</posx> 
+				<posy>192</posy>
+				<width>4</width>
+				<height>472</height>	
+				<onup>70</onup>			
+				<ondown>70</ondown>
+				<onleft>50</onleft>
+				<onright>50</onright>					
+				<orientation>vertical</orientation>
+				<texturesliderbackground>common/scrollbar_back.png</texturesliderbackground>
+				<textureslidernib colordiffuse="88ffffff">common/scrollbar.png</textureslidernib>
+				<textureslidernibfocus colordiffuse="FFffffff">common/scrollbar.png</textureslidernibfocus>	
+			</control>									
+		</control>
 	</controls>
 </window>
