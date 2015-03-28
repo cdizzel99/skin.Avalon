@@ -94,15 +94,7 @@
 						<texture>pvr/icons/pvr_play.png</texture>
 						<visible>ListItem.Isplaying</visible>
 						<visible>!ListItem.IsRecording</visible>
-					</control>
-					<control type="label">	<!--Channel Number-->							
-						<posx>65</posx>
-						<width>50</width>
-						<font>Light35</font>
-						<textcolor>midgrey</textcolor>
-						<selectedcolor>orange</selectedcolor>		
-						<label>$INFO[ListItem.ChannelNumber]</label>
-					</control>					
+					</control>				
 					<control type="label">	<!--Channel Name-->		
 						<animation type="Conditional" condition="ListItem.IsRecording" reversible="true">	
 							<effect type="slide" start="0" end="50" time="0"/>			
@@ -110,15 +102,15 @@
 						<animation type="Conditional" condition="ListItem.Isplaying" reversible="true">	
 							<effect type="slide" start="0" end="50" time="0"/>			
 						</animation>
-						<posx>120</posx>
-						<width>330</width>
+						<posx>65</posx>
+						<width>530</width>
 						<font>Light35</font>
 						<textcolor>midgrey</textcolor>
 						<selectedcolor>orange</selectedcolor>		
-						<label>$INFO[ListItem.ChannelName]</label>						
+						<label>$INFO[ListItem.ChannelNumber]  $INFO[ListItem.ChannelName]</label>						
 					</control>				
 					<control type="label">	<!--Now Playing-->								
-						<posx>820</posx>
+						<posx>480</posx>
 						<width>330</width>
 						<font>Light30</font>
 						<align>right</align>	
@@ -159,14 +151,6 @@
 						<visible>ListItem.Isplaying</visible>
 						<visible>!ListItem.IsRecording</visible>
 					</control>
-					<control type="label">	<!--Channel Number-->							
-						<posx>65</posx>
-						<width>50</width>
-						<font>Light35</font>
-						<textcolor>mainblue</textcolor>
-						<selectedcolor>orange</selectedcolor>		
-						<label>$INFO[ListItem.ChannelNumber]</label>
-					</control>	
 					<control type="label">	<!--Channel Name-->		
 						<animation type="Conditional" condition="ListItem.IsRecording" reversible="true">	
 							<effect type="slide" start="0" end="50" time="0"/>			
@@ -174,16 +158,16 @@
 						<animation type="Conditional" condition="ListItem.Isplaying" reversible="true">	
 							<effect type="slide" start="0" end="50" time="0"/>			
 						</animation>
-						<posx>120</posx>
-						<width>330</width>
+						<posx>65</posx>
+						<width>530</width>
 						<font>Light35</font>
 						<scrollspeed>30</scrollspeed>
 						<textcolor>mainblue</textcolor>
 						<selectedcolor>orange</selectedcolor>		
-						<label>$INFO[ListItem.ChannelName]</label>
+						<label>$INFO[ListItem.ChannelNumber]  $INFO[ListItem.ChannelName]</label>
 					</control>	
 					<control type="label">	<!--Now Playing-->								
-						<posx>820</posx>
+						<posx>480</posx>
 						<width>330</width>
 						<font>Light30</font>
 						<align>right</align>	
