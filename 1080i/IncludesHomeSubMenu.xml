@@ -732,31 +732,29 @@
 					<visible>Container(300).HasFocus(7)</visible>
 					<include>SubMenuButton</include>
 					<label>19023</label>
-					<onclick>ActivateWindowAndFocus(MyPVR, 32,0, 11,0)</onclick>
-				</control>
-				<control type="button" id="7004">		<!--Radio Channel-->
-					<visible>Container(300).HasFocus(7)</visible>
-					<include>SubMenuButton</include>
-					<label>19024</label>
-					<onclick>ActivateWindowAndFocus(MyPVR, 33,0, 12,0)</onclick>
+					<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVChannels)</onclick>
+					<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioChannels)</onclick>
 				</control>
 				<control type="button" id="7005">		<!--EPG-->
 					<visible>Container(300).HasFocus(7)</visible>
 					<include>SubMenuButton</include>
 					<label>19069</label>
-					<onclick>ActivateWindowAndFocus(MyPVR, 31,0, 10,0)</onclick>
+					<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVGuide)</onclick>
+					<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioGuide)</onclick>
 				</control>
-				<control type="button" id="7006">		<!--Rerording-->
+				<control type="button" id="7006">		<!--Recording-->
 					<visible>Container(300).HasFocus(7)</visible>
 					<include>SubMenuButton</include>
 					<label>19163</label>
-					<onclick>ActivateWindowAndFocus(MyPVR, 34,0, 13,0)</onclick>
+					<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVRecordings)</onclick>
+					<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioRecordings)</onclick>
 				</control>
 				<control type="button" id="7007">		<!--Timer-->
 					<visible>Container(300).HasFocus(7)</visible>
 					<include>SubMenuButton</include>
 					<label>19040</label>
-					<onclick>ActivateWindowAndFocus(MyPVR, 35,0, 14,0)</onclick>
+					<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimers)</onclick>
+					<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimers)</onclick>
 				</control>
 				<control type="image" id="7008">		<!--Space-->	
 					<visible>Container(300).HasFocus(7)</visible>	

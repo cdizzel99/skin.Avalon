@@ -46,7 +46,7 @@
 				<control type="image"><!--Poster-->				
 					<width>155</width>
 					<height>220</height>					
-					<texture background="true" fallback="poster_default.png" diffuse="poster_matte.png">$INFO[ListItem.Icon]</texture>
+					<texture background="true" fallback="poster_default.png" diffuse="poster_matte.png">$INFO[ListItem.Art(poster)]</texture>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
 				</control>							
 			</itemlayout>	
@@ -64,7 +64,7 @@
 					</animation>					
 					<width>155</width>
 					<height>220</height>					
-					<texture background="true" fallback="poster_default.png" diffuse="poster_matte.png">$INFO[ListItem.Icon]</texture>
+					<texture background="true" fallback="poster_default.png" diffuse="poster_matte.png">$INFO[ListItem.Art(poster]</texture>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
 				</control>	
 				<control type="image"><!--Poster Focus-->		
