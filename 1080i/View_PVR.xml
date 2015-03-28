@@ -287,10 +287,10 @@
 				<visible>Control.IsVisible(10)</visible>
 				<include>animation_view_change_pvr</include>
 				<include>animation_fade</include>
-				<posx>700</posx>
+				<posx>580</posx>
 				<posy>795</posy>						
 				<width>1150</width> 		
-				<font>Reg40Bold</font>			
+				<font>Reg45Bold</font>			
 				<textcolor>aawhite</textcolor>	
 				<label>$INFO[ListItem.Label]</label>
 			</control>
@@ -298,60 +298,38 @@
 				<visible>Control.IsVisible(10)</visible>
 				<include>animation_view_change_pvr</include>
 				<include>animation_fade</include>
-				<posx>700</posx>
+				<posx>580</posx>
 				<posy>865</posy>
 				<control type="group">	<!-- Ground 1 -->									
 					<posy>0</posy>
 					<control type="label">
 						<posx>0</posx>
 						<posy>0</posy>
-						<width>180</width>							
+						<width>380</width>							
 						<textcolor>mainblue</textcolor>			
-						<label>$LOCALIZE[19148] :</label>			
-					</control>
-					<control type="fadelabel">						
-						<posx>170</posx>
-						<posy>0</posy>
-						<width>300</width>	
-						<textcolor>aawhite</textcolor>
-						<label>$INFO[ListItem.ChannelName]</label>     		
-					</control>					
+						<label>$LOCALIZE[19148]: [COLOR aawhite]$INFO[ListItem.ChannelName][/COLOR]</label>			
+					</control>				
 				</control>
 				<control type="group">	<!-- Ground 2 -->									
 					<posy>40</posy>
 					<control type="label">
 						<posx>0</posx>
 						<posy>0</posy>
-						<width>180</width>			
+						<width>280</width>			
 						<textcolor>mainblue</textcolor>			
-						<label>$LOCALIZE[19126] :</label>			
-					</control>
-					<control type="label">					
-						<posx>170</posx>
-						<posy>0</posy>
-						<width>300</width>	
-						<textcolor>aawhite</textcolor>
-						<label>$INFO[ListItem.StartTime]</label>	
-					</control>					
+						<label>$LOCALIZE[19126]: [COLOR aawhite]$INFO[ListItem.StartTime][/COLOR]</label>			
+					</control>				
 				</control>
 				<control type="group">	<!-- Ground 3 -->									
 					<posy>80</posy>
 					<control type="label">
 						<posx>0</posx>
 						<posy>0</posy>
-						<width>180</width>			
+						<width>280</width>			
 						<textcolor>mainblue</textcolor>			
-						<label>$LOCALIZE[19127] :</label>			
-					</control>
-					<control type="label">						
-						<posx>170</posx>
-						<posy>0</posy>
-						<width>300</width>	
-						<textcolor>aawhite</textcolor>
-						<label>$INFO[ListItem.EndTime]</label>    		
+						<label>$LOCALIZE[19127]: [COLOR aawhite]$INFO[ListItem.EndTime][/COLOR]</label>			
 					</control>					
 				</control>
-
 			</control>
 			<control type="textbox">		<!--Info Plot-->	
 				<visible>Control.IsVisible(10)</visible>
@@ -360,7 +338,7 @@
 				<posx>1200</posx>
 				<posy>875</posy>	
 				<width>650</width>
-				<height>150</height>
+				<height>148</height>
 				<font>Light30</font>				
 				<textcolor>aawhite</textcolor>	
 				<shadowcolor></shadowcolor> 				
