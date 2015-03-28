@@ -338,7 +338,7 @@
 				<posx>1200</posx>
 				<posy>875</posy>	
 				<width>650</width>
-				<height>148</height>
+				<height>163</height>
 				<font>Light30</font>				
 				<textcolor>aawhite</textcolor>	
 				<shadowcolor></shadowcolor> 				
@@ -391,18 +391,19 @@
 					<control type="label">			<!--Channel Nummber-->
 						<posx>35</posx>
 						<posy>0</posy>
-						<width>80</width>
+						<width>100</width>
 						<height>80</height>
 						<font>Reg40</font>					
 						<textcolor>midgrey</textcolor>
 						<selectedcolor>midgrey</selectedcolor>									
 						<info>ListItem.ChannelNumber</info>
 					</control>
-					<control type="image">			<!--Channel Icon-->
-						<posx>85</posx>
-						<posy>10</posy>
-						<width>60</width>
-						<height>60</height>
+					<control type="image">
+						<posx>165</posx>
+						<posy>0</posy>
+						<width>120</width>
+						<height>80</height>
+						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="label" id="1">	<!--Channel Name-->
@@ -414,6 +415,7 @@
 						<textcolor>midgrey</textcolor>  
 						<selectedcolor>midgrey</selectedcolor>						
 						<label>$INFO[ListItem.ChannelName]</label>
+						<visible>IsEmpty(ListItem.Icon)</visible>
 					</control>
 				</channellayout>
 				<focusedchannellayout height="80" width="490">	<!--Channel left side FOCUS-->
@@ -428,18 +430,19 @@
 					<control type="label">			<!--Channel Nummber-->
 						<posx>35</posx>
 						<posy>0</posy>
-						<width>80</width>
+						<width>100</width>
 						<height>80</height>
 						<font>Reg40</font>					
 						<textcolor>white</textcolor>
 						<selectedcolor>white</selectedcolor>			
 						<info>ListItem.ChannelNumber</info>
 					</control>
-					<control type="image">			<!--Channel Icon-->
-						<posx>85</posx>
-						<posy>10</posy>
-						<width>60</width>
-						<height>60</height>
+					<control type="image">
+						<posx>165</posx>
+						<posy>0</posy>
+						<width>120</width>
+						<height>80</height>
+						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="fadelabel" id="1">	<!--Channel Name-->
@@ -451,6 +454,7 @@
 						<textcolor>black</textcolor>  
 						<selectedcolor>black</selectedcolor>		
 						<label>$INFO[ListItem.ChannelName]</label>
+						<visible>IsEmpty(ListItem.Icon)</visible>
 					</control>
 				</focusedchannellayout>
 
