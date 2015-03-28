@@ -52,7 +52,7 @@
 			</control>		
 
 			<!-- ================= -->
-			<!-- Start Viddeo Info -->
+			<!-- Start Video Info -->
 			<!-- ================= -->			
 			<control type="group">
 				<include>animation_dialog</include>	
@@ -126,7 +126,7 @@
 						<font>Reg32Bold</font>
 						<align>center</align>						
 						<textcolor>eewhite</textcolor>						
-						<label>$LOCALIZE[203]</label>
+						<label>$LOCALIZE[207]</label>
 					</control>		
 					<control type="label">							
 						<animation time="125" effect="fade">Visible</animation> 
@@ -456,7 +456,7 @@
 							<posx>0</posx>
 							<posy>0</posy>
 							<width>850</width>
-							<height>195</height>
+							<height>225</height>
 							<label>$INFO[ListItem.Plot]</label>
 							<textcolor>eewhite</textcolor>
 							<align>justify</align>
