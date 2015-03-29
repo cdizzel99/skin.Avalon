@@ -358,7 +358,17 @@ msgctxt "#31303"
 msgid "Data provider"
 msgstr ""
 
-#empty strings from id 31304 to 31306
+msgctxt "#31304"
+msgid "Artwork"
+msgstr ""
+
+msgctxt "#31305"
+msgid "Cinema"
+msgstr ""
+
+msgctxt "#31305"
+msgid "Video Extras"
+msgstr ""
 
 msgctxt "#31307"
 msgid "Hide Fanart"

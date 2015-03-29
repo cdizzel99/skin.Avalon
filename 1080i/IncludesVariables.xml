@@ -277,5 +277,9 @@
 		<value condition="VideoPlayer.Content(Movies) + Skin.HasSetting(OSD_Pause_Clearart)">$INFO[Player.FolderPath]clearart.png</value>
 		<value condition="VideoPlayer.Content(Episodes) + Skin.HasSetting(OSD_Pause_Clearart)">$INFO[Player.FolderPath,,../clearart.png]</value>
 	</variable>		
-	
+	<variable name="FanartImage">
+        <value condition="!IsEmpty(ListItem.Art(fanart)) + !Container.Content(episodes)">$INFO[ListItem.Art(fanart)]</value>
+        <value condition="!IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
+        <value>$INFO[ListItem.Icon]</value>
+    </variable>
 </includes>

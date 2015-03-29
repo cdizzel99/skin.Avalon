@@ -47,7 +47,7 @@
 				<onleft>9200</onleft>
 				<onright>noop</onright>
 				<onup>noop</onup>					
-				<ondown condition="!Player.HasVideo">9301</ondown>	
+				<ondown condition="!Player.HasVideo">12</ondown>	
 				<ondown condition="Player.HasVideo">9302</ondown>					
 			</control>		
 
@@ -585,7 +585,7 @@
 
 				</control>
 				<control type="group">	<!--Tab3-->
-					<visible>Control.HasFocus(9300)  | Control.HasFocus(9301) | ControlGroup(9302).HasFocus()</visible>				
+					<visible>Control.HasFocus(9300)  | Control.HasFocus(12) | ControlGroup(9302).HasFocus()</visible>				
 					<include>animation_tab_change_dialog_video_info</include>	
 					
 					<control type="image">				<!--Black Back-->
@@ -620,7 +620,7 @@
 					</control>
 
 					<!--OSD-->
-					<control type="button" id="9301">	<!--Play-->						
+					<control type="button" id="12">	<!--Play-->						
 						<animation effect="fade" start="100" end="0" time="300" condition="Player.HasVideo">Conditional</animation>							
 						<posx>615</posx><!--Center 765-->
 						<posy>363</posy>
@@ -633,11 +633,7 @@
 						<!--onclick>SetFocus(9300)</onclick-->
 						
 						<!--Youtube-->
-						<onclick>Skin.SetBool(FadeOverlay)</onclick>
-						<onclick>Dialog.Close(movieinformation,true)</onclick>
-						<onclick condition="Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)">ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$INFO[ListItem.Title] Trailer $INFO[System.Language],return)</onclick>
-						<onclick condition="Container.Content(episodes)">ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$INFO[ListItem.TVShowTitle] Trailer $INFO[System.Language],return)</onclick>
-						<onclick>SetFocus(50)</onclick>							
+						<onclick>Skin.SetBool(FadeOverlay)</onclick>						
 
 						<onleft>noop</onleft>
 						<onright>noop</onright>
