@@ -1,6 +1,6 @@
 <!--Avalon-->
 <window>
-	<defaultcontrol always="true">9100</defaultcontrol>       
+	<defaultcontrol always="true">8</defaultcontrol>       
 	<allowoverlay>no</allowoverlay>		
 	<controls>
 
