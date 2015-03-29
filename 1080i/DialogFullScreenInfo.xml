@@ -1,7 +1,7 @@
 <!--Avalon-->
 <window type="dialog" id="142">
-	<controls>
-
+	<controls>	
+	<include>TimeWeather</include>	
 		<!--OSD Panel-->
 		<control type="group">			
 			<visible>!Window.IsActive(filebrowser)</visible>

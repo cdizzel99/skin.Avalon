@@ -5,7 +5,7 @@
 	<visible>Window.IsActive(fullscreenvideo) + [Player.ShowInfo | Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding]</visible>
 
 	<controls>
-
+		<include>TimeWeather</include>
 		<!--OSD Panel-->
 		<control type="group">	
 			<visible>!Window.IsActive(filebrowser)</visible>
