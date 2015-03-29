@@ -53,10 +53,10 @@
 				<visible>Control.IsVisible(50)</visible> 
 				<include>animation_view_change_pvr</include>
 				<include>animation_hoverslide</include>
-				<posx>585</posx>
-				<posy>210</posy>
-				<width>345</width>
-				<height>345</height>
+				<posx>625</posx>
+				<posy>300</posy>
+				<width>250</width>
+				<height>250</height>
 				<fadetime>IconCrossfadeTime</fadetime>			
 				<texture background="true" fallback="cover_default.png" diffuse="cover_matte.png">$INFO[ListItem.Icon]</texture>
 				<aspectratio align="center" aligny="center">keep</aspectratio>				
