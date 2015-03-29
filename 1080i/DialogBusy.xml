@@ -1,28 +1,47 @@
 <!--Avalon-->
-<window id="136">
-	<defaultcontrol always="true">-</defaultcontrol>
-	<allowoverlay>yes</allowoverlay>
-
-	<controls>		
-
-		<control type="group">					
-			<posx>920</posx> <!--Center-->
-			<posy>380</posy> <!--Center-->
-			
-			<control type="multiimage">
-				<description>Busy animation</description>
-				<posx>-103</posx>
-				<posy>-103</posy>
-				<width>207</width>
-				<height>207</height>
-				<imagepath>dialogs/busy_big</imagepath>
-				<timeperimage>100</timeperimage>
-				<colordiffuse></colordiffuse>
-				<fadetime>0</fadetime>
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<coordinates>
+		<system>1</system>
+		<left>0</left>
+		<top>0</top>
+	</coordinates>
+	<include>dialogeffect</include>
+	<controls>
+		<control type="group">
+			<left>0</left>
+			<top>0</top>
+			<control type="image">
+				<description>background image</description>
+				<left>0</left>
+				<top>0</top>
+				<width>1920</width>
+				<height>1080</height>
+				<texture>vignette.png</texture>
 			</control>
-
+			<control type="group">
+				<visible>!System.Platform.Linux.RaspberryPi</visible>
+				<control type="image">
+					<description>Busy animation</description>
+					<left>912</left>
+					<top>492</top>
+					<width>96</width>
+					<height>96</height>
+					<texture>spinnerin.png</texture>
+					<aspectratio>keep</aspectratio>
+					<animation effect="rotate" start="0" end="360" center="auto" time="2000" loop="true" condition="true">conditional</animation>
+				</control>
+				<control type="image">
+					<description>Busy animation</description>
+					<left>912</left>
+					<top>492</top>
+					<width>96</width>
+					<height>96</height>
+					<texture>spinnerout.png</texture>
+					<aspectratio>keep</aspectratio>
+					<animation effect="rotate" start="360" end="0" center="auto" time="2000" loop="true" condition="true">conditional</animation>
+				</control>
+			</control>
 		</control>
-
 	</controls>
-
 </window>
