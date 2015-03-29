@@ -543,8 +543,8 @@
 	<!--Overlay-->
 	<include name="DialogOverlay">			<!--Dialog Overlay-->		
 		<control type="image">
-			<animation effect="fade" time="800" start="0" end="100">WindowOpen</animation>
-			<animation effect="fade" time="800" start="100" end="0">WindowClose</animation>
+			<animation effect="fade" time="0" start="0" end="100">WindowOpen</animation>
+			<animation effect="fade" time="300" start="100" end="0">WindowClose</animation>
 			<include>DimensionsFullscreen</include>
 			<colordiffuse>ccFFFFFF</colordiffuse>
 			<texture background="true">common/black.png</texture>			
