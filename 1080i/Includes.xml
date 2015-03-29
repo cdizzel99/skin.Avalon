@@ -693,6 +693,18 @@
 		<alttexturefocus>common/button-fo.png</alttexturefocus>
 		<alttexturenofocus>-</alttexturenofocus>
 	</include>	
+	<include name="VideoInfoButton">			<!--Sub Menu Button-->				
+		<width>450</width>
+		<align>center</align>
+		<textcolor>midgrey</textcolor>
+		<focusedcolor>mainblue</focusedcolor>
+		<disabledcolor>77585858</disabledcolor>
+		<pulseonselect>false</pulseonselect>
+		<texturefocus>-</texturefocus>		
+		<texturenofocus>-</texturenofocus>
+		<alttexturefocus>-</alttexturefocus>
+		<alttexturenofocus>-</alttexturenofocus>
+	</include>
 	<include name="SubMenuTabLeft">			<!--Sub Menu Tab Left-->	
 		<control type="image">	
 			<visible>!ControlGroup(9001).HasFocus()</visible>		
