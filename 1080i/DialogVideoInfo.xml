@@ -62,22 +62,22 @@
 
 					<!--Tap Back-->
 					<control type="image">	
-						<posx>50</posx>
-						<posy>0</posy>
+						<posx>24</posx>
+						<posy>-28</posy>
 						<width>491</width>
 						<height>99</height>				
 						<texture background="true">dialogs/videoinfo/tab_left_nf.png</texture>				
 					</control>							
 					<control type="image">	
-						<posx>523</posx>
-						<posy>0</posy>
-						<width>491</width>
+						<posx>497</posx>
+						<posy>-28</posy>
+						<width>545</width>
 						<height>70</height>				
 						<texture background="true">dialogs/videoinfo/tab_middle_nf.png</texture>				
 					</control>						
 					<control type="image">	
-						<posx>996</posx>
-						<posy>0</posy>
+						<posx>1022</posx>
+						<posy>-28</posy>
 						<width>491</width>
 						<height>99</height>				
 						<texture background="true" border="0,0,60,0">dialogs/videoinfo/tab_right_nf.png</texture>				
@@ -88,8 +88,8 @@
 						<visible>Control.HasFocus(9100) | ControlGroup(9101).HasFocus()</visible>
 						<animation time="125" effect="fade">Visible</animation> 
 						<animation time="125" effect="fade">Hidden</animation>	
-						<posx>50</posx>
-						<posy>0</posy>
+						<posx>24</posx>
+						<posy>-28</posy>
 						<width>491</width>
 						<height>99</height>				
 						<texture background="true">dialogs/videoinfo/tab_left_fo.png</texture>				
@@ -98,9 +98,9 @@
 						<visible>Control.HasFocus(9200) | Control.HasFocus(50)</visible>					
 						<animation time="125" effect="fade">Visible</animation> 
 						<animation time="125" effect="fade">Hidden</animation>	
-						<posx>523</posx>
-						<posy>0</posy>
-						<width>491</width>
+						<posx>497</posx>
+						<posy>-28</posy>
+						<width>545</width>
 						<height>70</height>				
 						<texture background="true">dialogs/videoinfo/tab_middle_fo.png</texture>				
 					</control>
@@ -108,8 +108,8 @@
 						<visible>Control.HasFocus(9300)  | Control.HasFocus(9301) | ControlGroup(9302).HasFocus()</visible>	
 						<animation time="125" effect="fade">Visible</animation> 
 						<animation time="125" effect="fade">Hidden</animation>
-						<posx>996</posx>
-						<posy>0</posy>
+						<posx>1022</posx>
+						<posy>-28</posy>
 						<width>491</width>
 						<height>99</height>				
 						<texture background="true" border="0,0,60,0">dialogs/videoinfo/tab_right_fo.png</texture>				
@@ -121,11 +121,12 @@
 						<animation time="125" effect="fade">Hidden</animation>	
 						<animation effect="fade" start="100" end="50" time="300" condition="!Control.HasFocus(9100)">Conditional</animation>
 						<posx>50</posx>
+						<posy>-28</posy>
 						<height>75</height>
 						<width>490</width>
 						<font>Reg32Bold</font>
 						<align>center</align>						
-						<textcolor>eewhite</textcolor>						
+						<textcolor>aawhite</textcolor>						
 						<label>$LOCALIZE[207]</label>
 					</control>		
 					<control type="label">							
@@ -133,11 +134,12 @@
 						<animation time="125" effect="fade">Hidden</animation>	
 						<animation effect="fade" start="100" end="50" time="300" condition="!Control.HasFocus(9200)">Conditional</animation>
 						<posx>523</posx>
+						<posy>-28</posy>
 						<height>75</height>
 						<width>490</width>
 						<font>Reg32Bold</font>
 						<align>center</align>						
-						<textcolor>eewhite</textcolor>						
+						<textcolor>aawhite</textcolor>						
 						<label>$LOCALIZE[206]</label>
 					</control>	
 					<control type="label">							
@@ -145,21 +147,22 @@
 						<animation time="125" effect="fade">Hidden</animation>	
 						<animation effect="fade" start="100" end="50" time="300" condition="!Control.HasFocus(9300)">Conditional</animation>
 						<posx>996</posx>
+						<posy>-28</posy>
 						<height>75</height>
 						<width>490</width>
 						<font>Reg32Bold</font>
 						<align>center</align>						
-						<textcolor>eewhite</textcolor>						
+						<textcolor>aawhite</textcolor>						
 						<label>$LOCALIZE[20410]</label>
 					</control>	
 
 					<!--Background Panel-->
 					<control type="image">	
 						<posx>4</posx>
-						<posy>23</posy>
+						<posy>21</posy>
 						<width>1529</width>
 						<height>815</height>			
-						<texture background="true" border="60">dialogs/videoinfo/back.png</texture>			
+						<texture background="true" border="35">dialogs/default/bg-black.png</texture>			
 					</control>
 
 				</control>	
@@ -225,7 +228,7 @@
 						<width>850</width>
 						<label>$INFO[ListItem.Title]</label>
 						<font>Reg40Bold</font>
-						<textcolor>eewhite</textcolor>
+						<textcolor>aawhite</textcolor>
 						<align>left</align>
 						<scroll>false</scroll>					
 					</control>	
@@ -335,7 +338,7 @@
 								<posy>0</posy>
 								<width>250</width>	
 								<font>Light32</font>
-								<textcolor>eewhite</textcolor>
+								<textcolor>aawhite</textcolor>
 								<label>$VAR[value_ground1_value]</label>			
 							</control>
 							<control type="label">
@@ -344,7 +347,7 @@
 								<posy>0</posy>
 								<width>250</width>
 								<font>Light32</font>
-								<textcolor>eewhite</textcolor>
+								<textcolor>aawhite</textcolor>
 								<label>...</label>			
 							</control>
 						</control>
@@ -365,7 +368,7 @@
 								<posy>0</posy>
 								<width>250</width>
 								<font>Light32</font>
-								<textcolor>eewhite</textcolor>
+								<textcolor>aawhite</textcolor>
 								<label>$VAR[value_ground2_value]</label>			
 							</control>
 							<control type="label">
@@ -374,7 +377,7 @@
 								<posy>0</posy>
 								<width>250</width>
 								<font>Light32</font>
-								<textcolor>eewhite</textcolor>					
+								<textcolor>aawhite</textcolor>					
 								<label>...</label>			
 							</control>
 						</control>
@@ -395,7 +398,7 @@
 								<posy>0</posy>
 								<width>250</width>
 								<font>Light32</font>
-								<textcolor>eewhite</textcolor>					
+								<textcolor>aawhite</textcolor>					
 								<label>$VAR[value_ground5_value]</label>			
 							</control>
 							<control type="label">
@@ -404,7 +407,7 @@
 								<posy>0</posy>
 								<width>250</width>
 								<font>Light32</font>
-								<textcolor>eewhite</textcolor>					
+								<textcolor>aawhite</textcolor>					
 								<label>...</label>			
 							</control>
 						</control>
@@ -425,7 +428,7 @@
 								<posy>0</posy>
 								<width>250</width>	
 								<font>Light32</font>
-								<textcolor>eewhite</textcolor>					
+								<textcolor>aawhite</textcolor>					
 								<label>$VAR[value_ground6_value]</label>			
 							</control>
 							<control type="label">
@@ -434,7 +437,7 @@
 								<posy>0</posy>
 								<width>250</width>	
 								<font>Light32</font>
-								<textcolor>eewhite</textcolor>					
+								<textcolor>aawhite</textcolor>					
 								<label>...</label>			
 							</control>
 						</control>			
@@ -458,7 +461,7 @@
 							<width>850</width>
 							<height>225</height>
 							<label>$INFO[ListItem.Plot]</label>
-							<textcolor>eewhite</textcolor>
+							<textcolor>aawhite</textcolor>
 							<align>justify</align>
 							<font>Light32</font>				
 						</control>	
@@ -482,6 +485,12 @@
 						<onup>9100</onup>
 						<ondown>noop</ondown>	
 
+						<control type="button" id ="8">		<!--Play-->								
+							<width>60</width>
+							<height>60</height>								
+							<texturefocus>dialogs/videoinfo/play_fo.png</texturefocus>
+							<texturenofocus>dialogs/videoinfo/play_nf.png</texturenofocus>						
+						</control>
 						<control type="button" id ="10">	<!--Get Thumb-->									
 							<width>60</width>
 							<height>60</height>	
@@ -498,12 +507,7 @@
 							<texturefocus>dialogs/videoinfo/refresh_fo.png</texturefocus>
 							<texturenofocus>dialogs/videoinfo/refresh_nf.png</texturenofocus>							
 						</control>	
-						<control type="button" id ="8">		<!--Play-->								
-							<width>60</width>
-							<height>60</height>								
-							<texturefocus>dialogs/videoinfo/play_fo.png</texturefocus>
-							<texturenofocus>dialogs/videoinfo/play_nf.png</texturenofocus>						
-						</control>
+						
 
 					</control>	
 
