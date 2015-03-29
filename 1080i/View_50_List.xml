@@ -27,10 +27,10 @@
 				<control type="image">	<!--Episode Thumb-->			
 					<visible>Container.Content(episodes)</visible>
 					<include>animation_visible_hidden</include>
-					<posx>200</posx><!--200-->
-					<posy>857</posy><!--Button = 1025-->
-					<width>300</width>
-					<height>168</height><!--1,78-->
+					<posx>80</posx><!--200-->
+					<posy>818</posy><!--Button = 1025-->
+					<width>500</width>
+					<height>218</height><!--1,78-->
 					<fadetime>IconCrossfadeTime</fadetime>			
 					<texture background="true" diffuse="episode_matte.png">$INFO[ListItem.Icon]</texture>			
 					<aspectratio align="center" aligny="center">scale</aspectratio>				
