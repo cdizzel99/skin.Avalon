@@ -61,6 +61,7 @@
 	<!-- ========== -->
 	<variable name="value_list_label_1">
 		<value condition="Container.Content(albums)">$INFO[ListItem.Label2] - $INFO[ListItem.Label]</value>
+		<value condition="Container.Content(episodes)">$LOCALIZE[20359] $INFO[ListItem.Episode]: $INFO[ListItem.Title]</value>
 		<value condition="!Container.Content(albums)">$INFO[ListItem.Label]</value>		
 	</variable>	
 	<variable name="value_list_label_2"> 
