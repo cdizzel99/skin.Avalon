@@ -2,7 +2,7 @@
 <window id="6">
 	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
-	<views>50,51,52,53,54,55</views>	
+	<views>50,51,52,53,54,55,56</views>	
 	<onload>Skin.Reset(FadeOverlay)</onload>	
 	<onload>RunScript(script.tv.show.next.aired,backend=True)</onload>
 
@@ -40,6 +40,20 @@
 				<fadetime>FanartCrossfadeTime</fadetime>					
 			</control>				
 		</control>		
+		<control type="group">	<!--View 56-->			
+			<visible>Control.IsVisible(56)</visible>					
+			<include>animation_visible_hidden</include>
+			<include>animation_hoverslide</include>
+			<control type="image">
+				<posx>0</posx>
+				<posy>129</posy>
+				<width>800</width> 
+				<height>738</height>							
+				<texture background="true" diffuse="views/view_50_matte.png" fallback="special://skin/backgrounds/videos.jpg">$VAR[value_video_fanart]</texture>				
+				<aspectratio scalediffuse="false" align="center">scale</aspectratio>
+				<fadetime>FanartCrossfadeTime</fadetime>					
+			</control>				
+		</control>	
 		<control type="group">	<!--Dummy Load View 52,53,54,55-->			
 			<visible>Control.IsVisible(52) | Control.IsVisible(53) | Control.IsVisible(54) | Control.IsVisible(55)</visible>					
 			<include>animation_visible_hidden</include>
@@ -62,10 +76,11 @@
 		<include condition="Skin.HasSetting(Enable_View_53)">View_53_Poster</include>	
 		<include condition="Skin.HasSetting(Enable_View_54)">View_54_Wall</include>	
 		<include condition="Skin.HasSetting(Enable_View_55)">View_55_Wall</include>	
+		<include condition="Skin.HasSetting(Enable_View_56)">View_56_Thumbs</include>	
 
 		<!--Sub Menu Tab-->
 		<control type="group"> 
-			<visible>Control.IsVisible(50) | Control.IsVisible(54) | Control.IsVisible(55)</visible>
+			<visible>Control.IsVisible(50) | Control.IsVisible(54) | Control.IsVisible(55) | Control.IsVisible(56)</visible>
 			<include>SubMenuTabLeft</include>
 		</control>	
 		<control type="group"> 

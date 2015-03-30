@@ -9,6 +9,7 @@
 	<include file="View_53_Poster.xml" />		
 	<include file="View_54_Wall.xml" />	
 	<include file="View_55_Wall.xml" />	
+	<include file="View_56_Thumbs.xml" />	
 	<include file="View_501_Showcase_Fanart.xml" />		
 	<include file="View_502_Showcase_Panel.xml" />	
 	<include file="View_503_Poster.xml" />
@@ -155,8 +156,8 @@
 			<include>DimensionsFullscreen</include>
 			<texture>views/view_51_overlay.png</texture>					
 		</control>	
-		<control type="image">	<!--View=50,52,53,54,55 Background-->	
-			<visible>Control.IsVisible(50) |Control.IsVisible(52) | Control.IsVisible(53) | Control.IsVisible(54) | Control.IsVisible(55)</visible>		
+		<control type="image">	<!--View=50,52,53,54,55,56 Background-->	
+			<visible>Control.IsVisible(50) |Control.IsVisible(52) | Control.IsVisible(53) | Control.IsVisible(54) | Control.IsVisible(55) | Control.IsVisible(56)</visible>		
 			<include>DimensionsFullscreen</include>
 			<texture>special://skin/backgrounds/global.jpg</texture>					
 		</control>	

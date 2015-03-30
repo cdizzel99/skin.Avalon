@@ -187,10 +187,20 @@
 					<height>50</height>
 					<focusedcolor>black</focusedcolor>
 					<font>Reg32</font>	
-					<label>Big Wall</label>					
+					<label>Small Panel</label>					
 					<onclick>Skin.ToggleSetting(Enable_View_55)</onclick>
 					<selected>Skin.HasSetting(Enable_View_55)</selected>	
 				</control>	
+				<control type="radiobutton" id="6007">	<!--(55) View Wall-->
+					<width>1230</width>
+					<align>left</align>					
+					<height>50</height>
+					<focusedcolor>black</focusedcolor>
+					<font>Reg32</font>	
+					<label>Thumbs</label>					
+					<onclick>Skin.ToggleSetting(Enable_View_56)</onclick>
+					<selected>Skin.HasSetting(Enable_View_56)</selected>	
+				</control>
 
 				<control type="label" id="6101">		<!--Label: Music-->					
 					<width>1230</width>
