@@ -97,20 +97,20 @@
 	<variable name="value_ground3_label"><!--Genre / Runtime-->
 		<value condition="Container.Content(movies) | Window.IsVisible(VideoPlaylist) | Container.Content(musicvideos)">$LOCALIZE[135]</value>
 		<value condition="Container.Content(episodes)">$LOCALIZE[180]</value>
-		<value condition="Container.Content(tvshows) | Container.Content(seasons)">$LOCALIZE[31052]</value>
+		<value condition="Container.Content(tvshows)">$LOCALIZE[31052]</value>
 	</variable>
 	<variable name="value_ground3_value">
 		<value condition="Container.Content(movies) | Window.IsVisible(VideoPlaylist) | Container.Content(musicvideos)">$INFO[ListItem.Genre]</value>
 		<value condition="Container.Content(episodes)">$INFO[ListItem.Duration] min</value>
-		<value condition="Container.Content(tvshows) | Container.Content(seasons)">$VAR[NextAiredStatus]</value>
+		<value condition="Container.Content(tvshows)">$VAR[NextAiredStatus]</value>
 	</variable>
 	<variable name="value_ground4_label"><!--Director-->
 		<value condition="Container.Content(movies) | Window.IsVisible(VideoPlaylist) | Container.Content(musicvideos)">$LOCALIZE[20339]</value>
-		<value condition="[Container.Content(tvshows) | Container.Content(seasons)] + !IsEmpty(Window(Home).Property(NextAired.NextDate))">$LOCALIZE[31053]</value>
+		<value condition="Container.Content(tvshows) + !IsEmpty(Window(Home).Property(NextAired.NextDate))">$LOCALIZE[31053]</value>
 	</variable>
 	<variable name="value_ground4_value">
 		<value condition="Container.Content(movies) | Window.IsVisible(VideoPlaylist) | Container.Content(musicvideos)">$INFO[ListItem.Director]</value>
-		<value condition="[Container.Content(tvshows) | Container.Content(seasons)] + !IsEmpty(Window(Home).Property(NextAired.NextDate))">$INFO[Window(Home).Property(NextAired.NextDate)] ($INFO[Window(Home).Property(NextAired.ShortTime)])</value>
+		<value condition="Container.Content(tvshows) + !IsEmpty(Window(Home).Property(NextAired.NextDate))">$INFO[Window(Home).Property(NextAired.NextDate)] ($INFO[Window(Home).Property(NextAired.ShortTime)])</value>
 	</variable>
 	<!--Dialog Video Info-->
 	<variable name="value_ground5_label"><!--Genre / Studio-->

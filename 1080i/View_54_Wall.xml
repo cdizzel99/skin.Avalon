@@ -93,7 +93,7 @@
 				<posx>0</posx>
 				<posy>722</posy>
 				<control type="image">	<!--5Star Rating-->	
-					<visible>Container.Content(movies)</visible>
+					<!-- <visible>Container.Content(movies)</visible> -->
 					<posx>700</posx>
 					<posy>14</posy>
 					<width>160</width>

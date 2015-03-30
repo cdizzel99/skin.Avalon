@@ -77,7 +77,7 @@
 				<posy>160</posy>				
 
 
-				<!-- Current Temperatur -->
+				<!-- Current Temperature -->
 				<control type="label">
 					<label>$LOCALIZE[401]</label>
 					<posx>0</posx>
