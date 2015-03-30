@@ -292,7 +292,7 @@
 						<visible>!IsEmpty(Control.GetLabel(5304))</visible>
 						<posx>170</posx>
 						<posy>0</posy>
-						<width>250</width>	
+						<width>260</width>	
 						<font>Light30</font>
 						<textcolor>aawhite</textcolor>					
 						<label>$VAR[value_ground4_value]</label>			
@@ -314,7 +314,7 @@
 				<posx>1200</posx>
 				<posy>875</posy>	
 				<width>620</width>
-				<height>150</height>
+				<height>163</height>
 				<font>Light30</font>				
 				<textcolor>aawhite</textcolor>	
 				<shadowcolor></shadowcolor> 

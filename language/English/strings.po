@@ -152,7 +152,15 @@ msgctxt "#31051"
 msgid "Sort: Descending"
 msgstr ""
 
-#empty strings from id 31052 to 31054
+msgctxt "#31052"
+msgid "Status"
+msgstr ""
+
+msgctxt "#31053"
+msgid "Next Aired"
+msgstr ""
+
+#empty strings 31054
 #Playlist Editor labels
 
 msgctxt "#31055"

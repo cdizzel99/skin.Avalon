@@ -137,7 +137,7 @@
 		<control type="image">				
 			<include>DimensionsFullscreen</include>			
 			<texture background="true">special://skin/backgrounds/global.jpg</texture>				
-		</control>		
+		</control>	
 	</include>
 	<include name="VideoBackground">
 		<control type="image">	<!--View=51 Background / Fanart-->
